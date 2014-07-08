@@ -1,0 +1,22 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: whonixcheck-
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, git, python-qt4
+Homepage: https://github.com/Whonix/whonixcheck-gui
+Vcs-Browser: https://github.com/Whonix/whonixcheck-gui
+Vcs-Git: https://github.com/Whonix/whonixcheck-gui.git
+Standards-Version: 3.9.4
+
+Package: whonixcheck-gui
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: none
+Description: Zenity progress replacement. Adds a pseudo terminal with
+whonixcheck stdout.
+All the parameters are configurable as arguments: severity icon, message box
+title, message, optional question, buttons.
